@@ -1,1 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2ecc71;
+}
+
+section {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+}
+
+/* Desktop View */
+.desktop {
+    float: left;
+    width: 33.33%;
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+    .desktop {
+        width: 50%;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .desktop {
+        width: 100%;
+    }
+}
 
